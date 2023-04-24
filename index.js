@@ -1,10 +1,10 @@
-const environment = process.argv.slice(2)[0] === 'test' ? 'test' : 'dev'
+const environment = process.argv.slice(2) ? process.argv.slice(2)[0] : 'db'
 const port = process.argv.slice(3) ? process.argv.slice(3)[0] : 3001
 
 const jsonServer = require("json-server");
-const secretKey = process.env.NUXT_PUBLIC_SECRET
+const secretKey = 'y7KjrBFOgLRz7mTPvwkue2CTCrUH4TJ20g55cVyWXvw'
 const server = jsonServer.create();
-const router = jsonServer.router(filePath, { watch: environment === 'dev' });
+const router = jsonServer.router(`${environment}.json`);
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
