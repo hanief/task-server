@@ -1,39 +1,53 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "authId": "google-oauth2|107618814170039427466",
+      "email": "hanief@gmail.com"
+    }
+  ],
   "tasks": [
     {
       "id": 1,
       "text": "Buy Groceries",
-      "isDone": true
+      "isDone": true,
+      "userId": "google-oauth2|107618814170039427466"
     },
     {
       "id": 2,
       "text": "Write a blog post",
-      "isDone": false
+      "isDone": false,
+      "userId": "google-oauth2|107618814170039427466"
     },
     {
       "id": 3,
       "text": "Record a video",
-      "isDone": true
+      "isDone": true,
+      "userId": "google-oauth2|107618814170039427466"
     },
     {
       "id": 4,
       "text": "Go to the gym",
-      "isDone": true
+      "isDone": true,
+      "userId": "google-oauth2|107618814170039427466"
     },
     {
       "id": 5,
       "text": "Run a marathon",
-      "isDone": true
+      "isDone": true,
+      "userId": "id"
     },
     {
       "id": 6,
       "text": "Eat a burger",
-      "isDone": false
+      "isDone": false,
+      "userId": "id"
     },
     {
       "id": 7,
       "text": "Drink a coffee",
-      "isDone": false
+      "isDone": false,
+      "userId": "id"
     }
   ]
 }
