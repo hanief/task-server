@@ -1,12 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "tasks",
-      "email": "tasks@multita.sk",
-      "image": "https://multita.sk/logo.svg"
-    }
-  ],
   "tasks": [
     {
       "id": 1,
@@ -49,6 +41,13 @@
       "text": "Drink a coffee",
       "isDone": false,
       "user": "tasks@multita.sk"
+    },
+    {
+      "text": "New task",
+      "isDone": false,
+      "localId": 22715,
+      "user": "tasks@multita.sk",
+      "id": 8
     }
   ]
 }

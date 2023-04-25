@@ -1,12 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "tasks",
-      "email": "tasks@multita.sk",
-      "image": "https://multita.sk/logo.svg"
-    }
-  ],
   "tasks": [
     {
       "id": 1,
