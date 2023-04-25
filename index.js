@@ -40,18 +40,15 @@ function runServer() {
 
   server.use((req, res, next) => {
     if (isAuthorized(req)) {
-      if (req.path.substring(0, 6) === '/tasks') {
-        if (req.query.user_id) {
-          next()
-        } else {
-          if (req.method === 'POST') {
-            res.json([])
-          } else {
-            res.json({})
-          }
-        }
-      } else {
+      if (req.query.user) {
         next()
+      } else {
+        const basePath = req.path.substring(0, 7)
+        if (basePath === '/tasks/' || basePath === '/users/') {
+          res.json({})
+        } else {
+          res.json([])
+        }
       }
     } else {
       res.sendStatus(401)
